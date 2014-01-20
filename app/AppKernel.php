@@ -34,6 +34,12 @@ class AppKernel extends Kernel
 
             // and the sandbox bundle
             new Acme\MainBundle\AcmeMainBundle(),
+
+            new Samson\Bundle\AutocompleteBundle\SamsonAutocompleteBundle(),
+            new Samson\Bundle\UnexpectedResponseBundle\SamsonUnexpectedResponseBundle(),
+
+            new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle(),
+            new Burgov\AutocompleteTestBundle\BurgovAutocompleteTestBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
